@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程序员个人网站 | 项目</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">个人简介</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="resume.html">简历</a></li>
+                <li><a href="projects.html" class="active">项目</a></li>
+                <li><a href="skills.html">技术栈</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-text">我的项目</h1>
+            <div class="breadcrumb">
+                <a href="index.html">首页</a> / <span>项目</span>
+            </div>
+        </div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>项目作品集</h2>
+                <div class="section-divider"></div>
+                <p>以下是我近期完成的一些项目，展示了我在不同技术领域的能力和经验</p>
+            </div>
+
+            <!-- 项目过滤器 -->
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">Web应用</button>
+                <button class="filter-btn" data-filter="mobile">移动应用</button>
+                <button class="filter-btn" data-filter="backend">后端系统</button>
+                <button class="filter-btn" data-filter="ai">AI/机器学习</button>
+            </div>
+
+            <!-- 项目网格 -->
+            <div class="projects-grid">
+                <!-- 项目1 -->
+                <div class="project-item web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="智能客户管理系统">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>智能客户管理系统</h3>
+                            <p>基于React和Node.js的全栈应用，集成AI分析客户行为模式，提供个性化推荐和自动化营销功能。</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目2 -->
+                <div class="project-item web backend">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="电子商务平台">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>电子商务平台</h3>
+                            <p>基于Vue.js和Spring Boot的现代电商平台，支持多种支付方式，包含完整的订单管理和库存系统。</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目3 -->
+                <div class="project-item web ai">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="数据可视化仪表板">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>数据可视化仪表板</h3>
+                            <p>使用D3.js和Python构建的实时数据分析和可视化平台，支持多种图表类型和交互式数据探索。</p>
+                            <div class="project-tags">
+                                <span>D3.js</span>
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目4 -->
+                <div class="project-item mobile">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project4.jpg" alt="健康追踪应用">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>健康追踪应用</h3>
+                            <p>使用React Native开发的跨平台移动应用，提供健康数据追踪、运动计划和营养建议功能。</p>
+                            <div class="project-tags">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>Redux</span>
+                                <span>HealthKit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目5 -->
+                <div class="project-item backend">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project5.jpg" alt="微服务架构系统">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>微服务架构系统</h3>
+                            <p>基于Spring Cloud的微服务架构系统，实现了服务发现、负载均衡、断路器和API网关等功能。</p>
+                            <div class="project-tags">
+                                <span>Spring Cloud</span>
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                                <span>RabbitMQ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目6 -->
+                <div class="project-item ai">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project6.jpg" alt="智能推荐引擎">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>智能推荐引擎</h3>
+                            <p>基于机器学习算法的内容推荐系统，使用协同过滤和深度学习模型提供个性化推荐。</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>FastAPI</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目统计 -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="50000">0</span>+
+                    </div>
+                    <div class="stat-title">代码行数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="1200">0</span>+
+                    </div>
+                    <div class="stat-title">咖啡杯数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="3000">0</span>+
+                    </div>
+                    <div class="stat-title">工作小时</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="25">0</span>+
+                    </div>
+                    <div class="stat-title">满意客户</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目流程 -->
+    <section class="project-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>我的项目流程</h2>
+                <div class="section-divider"></div>
+                <p>我遵循一套结构化的流程来确保每个项目都能高质量地完成</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step scroll-animation">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>需求分析</h3>
+                        <p>深入了解客户需求，明确项目目标、范围和约束条件，制定详细的需求文档。</p>
+                    </div>
+                </div>
+                <div class="process-step scroll-animation">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>设计规划</h3>
+                        <p>创建系统架构和数据模型，设计用户界面和交互流程，制定技术选型和开发计划。</p>
+                    </div>
+                </div>
+                <div class="process-step scroll-animation">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>开发实现</h3>
+                        <p>按照敏捷开发方法进行迭代开发，定期交付可用的功能模块，保持代码质量和文档更新。</p>
+                    </div>
+                </div>
+                <div class="process-step scroll-animation">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>测试验证</h3>
+                        <p>进行单元测试、集成测试和系统测试，确保功能正确性、性能和安全性，修复发现的问题。</p>
+                    </div>
+                </div>
+                <div class="process-step scroll-animation">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>部署上线</h3>
+                        <p>准备生产环境，进行系统部署和配置，执行最终验收测试，确保平稳上线。</p>
+                    </div>
+                </div>
+                <div class="process-step scroll-animation">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>维护优化</h3>
+                        <p>提供技术支持和问题修复，收集用户反馈，持续优化系统性能和用户体验。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作邀请 -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>有项目想要合作？</h2>
+                <p>如果您有项目需求或想要了解更多信息，请随时联系我</p>
+                <a href="contact.html" class="btn btn-primary">联系我</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo-text">个人简介</a>
+                    <p>创建优雅、高效且用户友好的应用程序</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="resume.html">简历</a></li>
+                        <li><a href="projects.html">项目</a></li>
+                        <li><a href="skills.html">技术栈</a></li>
+                        <li><a href="contact.html">联系我</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>社交媒体</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 脚本 -->
+    <script src="js/main.js"></script>
+</body>
+</html>

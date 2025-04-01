@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程序员个人网站 | 技术栈</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">个人简介</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="resume.html">简历</a></li>
+                <li><a href="projects.html">项目</a></li>
+                <li><a href="skills.html" class="active">技术栈</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-text">我的技术栈</h1>
+            <div class="breadcrumb">
+                <a href="index.html">首页</a> / <span>技术栈</span>
+            </div>
+        </div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </section>
+
+    <!-- 技术概览 -->
+    <section class="skills-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>技术能力概览</h2>
+                <div class="section-divider"></div>
+                <p>作为一名全栈开发工程师，我掌握了从前端到后端、从设计到部署的全面技术栈</p>
+            </div>
+            
+            <div class="skills-radar-chart scroll-animation">
+                <div class="radar-chart-container">
+                    <canvas id="skillsRadarChart"></canvas>
+                </div>
+                <div class="radar-legend">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(74, 108, 247, 0.7);"></span>
+                        <span class="legend-text">前端开发</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(41, 204, 151, 0.7);"></span>
+                        <span class="legend-text">后端开发</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(255, 99, 132, 0.7);"></span>
+                        <span class="legend-text">数据库</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(255, 159, 64, 0.7);"></span>
+                        <span class="legend-text">DevOps</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(153, 102, 255, 0.7);"></span>
+                        <span class="legend-text">云服务</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 前端技术 -->
+    <section class="skills-frontend">
+        <div class="container">
+            <div class="section-header">
+                <h2>前端开发技术</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-text scroll-animation">
+                    <p>我在前端开发领域拥有丰富的经验，精通现代前端框架和工具，能够创建响应式、高性能且用户友好的界面。</p>
+                    <p>我注重代码质量和最佳实践，熟悉组件化开发、状态管理、路由控制和前端性能优化技术。</p>
+                    <p>我善于使用现代化的构建工具和自动化测试框架，确保前端代码的可维护性和稳定性。</p>
+                </div>
+                
+                <div class="skills-cards">
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React</h3>
+                        <p>精通React生态系统，包括Hooks、Context API、Redux状态管理、React Router路由控制等。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fab fa-vuejs"></i>
+                        </div>
+                        <h3>Vue.js</h3>
+                        <p>熟练使用Vue.js框架及其生态系统，包括Vue Router、Vuex、Composition API和自定义指令等。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <h3>Angular</h3>
+                        <p>掌握Angular框架，包括组件、服务、依赖注入、RxJS响应式编程和Angular Material等。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript/TypeScript</h3>
+                        <p>深入理解JavaScript语言特性和ES6+新特性，熟练使用TypeScript进行类型安全的开发。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS/SASS</h3>
+                        <p>精通CSS3和预处理器(SASS/LESS)，熟悉Flexbox、Grid布局和CSS动画，能创建现代化UI。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>构建工具</h3>
+                        <p>熟练使用Webpack、Vite、Babel等构建工具，优化前端资源加载和应用性能。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                            <span>88%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 后端技术 -->
+    <section class="skills-backend">
+        <div class="container">
+            <div class="section-header">
+                <h2>后端开发技术</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="skills-content reverse">
+                <div class="skills-cards">
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <p>精通Node.js和Express框架，能够构建高性能、可扩展的RESTful API和Web服务。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                            <span>92%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <p>熟练使用Python及Django/Flask框架，开发Web应用、数据处理和自动化脚本。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <p>掌握Java语言和Spring Boot框架，能够开发企业级应用和微服务架构系统。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>API设计</h3>
+                        <p>精通RESTful API设计原则，熟悉GraphQL、WebSocket等现代API技术。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>安全与认证</h3>
+                        <p>熟悉Web安全最佳实践，包括OAuth2.0、JWT、HTTPS和常见安全漏洞防护。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card scroll-animation">
+                        <div class="skill-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>微服务架构</h3>
+                        <p>了解微服务设计模式、服务发现、负载均衡、API网关和容错机制等。</p>
+                        <div class="skill-level">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                            <span>82%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-text scroll-animation">
+                    <p>我在后端开发方面拥有扎实的基础，熟悉多种编程语言和框架，能够设计和实现高性能、安全可靠的服务端应用。</p>
+                    <p>我注重系统架构设计和代码质量，熟悉面向对象编程、设计模式和测试驱动开发等软件工程实践。</p>
+                    <p>我具备处理高并发、大数据量场景的经验，能够针对性能瓶颈进行优化，确保系统的可扩展性和稳定性。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据库技术 -->
+    <section class="skills-database">
+        <div class="container">
+            <div class="section-header">
+                <h2>数据库技术</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-grid-item scroll-animation">
+                    <div class="skill-grid-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>关系型数据库</h3>
+                    <ul class="skill-list">
+                        <li>MySQL - 熟练使用MySQL进行数据库设计、优化和管理</li>
+                        <li>PostgreSQL - 掌握高级特性和地理信息功能</li>
+                        <li>SQL优化 - 能够编写高效的SQL查询和索引优化</li>
+                        <li>数据建模 - 熟悉范式设计和数据库架构</li>
+                    </ul>
+                    <div class="skill-meter">
+                        <div class="skill-meter-fill" style="width: 90%"></div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-grid-item scroll-animation">
+                    <div class="skill-grid-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>NoSQL数据库</h3>
+                    <ul class="skill-list">
+                        <li>MongoDB - 精通文档数据库设计和聚合管道</li>
+                        <li>Redis - 熟练使用缓存、会话存储和消息队列</li>
+                        <li>Elasticsearch - 掌握全文搜索和数据分析</li>
+                        <li>DynamoDB - 了解AWS托管NoSQL服务</li>
+                    </ul>
+                    <div class="skill-meter">
+                        <div class="skill-meter-fill" style="width: 85%"></div>
+                        <span>85%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-grid-item scroll-animation">
+                    <div class="skill-grid-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>ORM和数据访问</h3>
+                    <ul class="skill-list">
+                        <li>Sequelize - Node.js ORM框架</li>
+                        <li>Mongoose - MongoDB对象建模工具</li>
+                        <li>Hibernate - Java持久层框架</li>
+                        <li>SQLAlchemy - Python SQL工具包和ORM</li>
+                    </ul>
+                    <div class="skill-meter">
+                        <div class="skill-meter-fill" style="width: 88%"></div>
+                        <span>88%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-grid-item scroll-animation">
+                    <div class="skill-grid-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>数据库管理</h3>
+                    <ul class="skill-list">
+                        <li>性能调优 - 查询优化、索引设计</li>
+                        <li>数据迁移 - 版本控制和无缝迁移</li>
+                        <li>备份恢复 - 灾难恢复和高可用性</li>
+                        <li>安全性 - 访问控制和数据加密</li>
+                    </ul>
+                    <div class="skill-meter">
+                        <div class="skill-meter-fill" style="width: 82%"></div>
+                        <span>82%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DevOps和云服务 -->
+    <section class="skills-devops">
+        <div class="container">
+            <div class="section-header">
+                <h2>DevOps和云服务</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="skills-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="devops">DevOps工具</button>
+                    <button class="tab-btn" data-tab="aws">AWS</button>
+                    <button class="tab-btn" data-tab="azure">Azure</button>
+                    <button class="tab-btn" data-tab="gcp">Google Cloud</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="devops">
+                        <div class="devops-skills">
+                            <div class="devops-skill-item scroll-animation">
+                                <div class="devops-skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <div class="devops-skill-info">
+                                    <h3>版本控制</h3>
+                                    <p>精通Git工作流、分支策略、代码审查和协作开发流程</p>
+                                    <div class="skill-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="devops-skill-item scroll-animation">
+                                <div class="devops-skill-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="devops-skill-info">
+                                    <h3>容器化</h3>
+                                    <p>熟练使用Docker构建、部署和管理容器化应用</p>
+                                    <div class="skill-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="devops-skill-item scroll-animation">
+                                <div class="devops-skill-icon">
+                                    <i class="fas fa-dharmachakra"></i>
+                                </div>
+                                <div class="devops-skill-info">
+                                    <h3>Kubernetes</h3>
+                                    <p>了解容器编排、服务发现和自动扩展</p>
+                                    <div class="skill-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="devops-skill-item scroll-animation">
+                                <div class="devops-skill-icon">
+                                    <i class="fas fa-infinity"></i>
+                                </div>
+                                <div class="devops-skill-info">
+                                    <h3>CI/CD</h3>
+                                    <p>熟悉Jenkins、GitHub Actions和GitLab CI等自动化部署工具</p>
+                                    <div class="skill-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="devops-skill-item scroll-animation">
+                                <div class="devops-skill-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="devops-skill-info">
+                                    <h3>监控与日志</h3>
+                                    <p>使用Prometheus、Grafana和ELK Stack进行系统监控和日志分析</p>
+                                    <div class="skill-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="devops-skill-item scroll-animation">
+                                <div class="devops-skill-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <div class="devops-skill-info">
+                                    <h3>基础设施即代码</h3>
+                                    <p>了解Terraform、Ansible等自动化配置管理工具</p>
+                                    <div class="skill-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="aws">
+                        <div class="cloud-skills-grid">
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>EC2 & ECS</h3>
+                                <p>虚拟服务器和容器服务</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>S3 & CloudFront</h3>
+                                <p>对象存储和内容分发</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>RDS & DynamoDB</h3>
+                                <p>关系型和NoSQL数据库</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>Lambda & API Gateway</h3>
+                                <p>无服务器计算和API管理</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>CloudFormation</h3>
+                                <p>基础设施即代码</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>IAM & Security</h3>
+                                <p>身份和访问管理</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="azure">
+                        <div class="cloud-skills-grid">
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>Azure VM & AKS</h3>
+                                <p>虚拟机和Kubernetes服务</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>Azure Storage</h3>
+                                <p>Blob、File和Table存储</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>Azure SQL & Cosmos DB</h3>
+                                <p>关系型和NoSQL数据库</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>Azure Functions</h3>
+                                <p>无服务器计算</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>Azure DevOps</h3>
+                                <p>CI/CD和项目管理</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="gcp">
+                        <div class="cloud-skills-grid">
+                            <div class="cloud-skill-item scroll-animation">
+                                <h3>Compute Engine & GKE</h3>
+                                <p>虚拟机和Kubernetes引擎</p>
+                                <div class="skill-level-indicator">
+                                    <div class="level-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="cloud-skill-

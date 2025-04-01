@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程序员个人网站 | 简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">个人简介</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="resume.html" class="active">简历</a></li>
+                <li><a href="projects.html">项目</a></li>
+                <li><a href="skills.html">技术栈</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-text">我的简历</h1>
+            <div class="breadcrumb">
+                <a href="index.html">首页</a> / <span>简历</span>
+            </div>
+        </div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </section>
+
+    <!-- 个人信息 -->
+    <section class="resume-section">
+        <div class="container">
+            <div class="resume-header">
+                <div class="resume-image">
+                    <img src="images/profile.jpg" alt="个人照片">
+                </div>
+                <div class="resume-info">
+                    <h2>张三</h2>
+                    <p class="job-title">全栈开发工程师</p>
+                    <div class="resume-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+86 123 4567 8910</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>北京市朝阳区</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/yourname</span>
+                        </div>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 下载简历</a>
+                        <a href="contact.html" class="btn btn-outline">联系我</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="resume-about">
+        <div class="container">
+            <div class="section-header">
+                <h2>关于我</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content scroll-animation">
+                <p>我是一名充满激情的全栈开发工程师，拥有5年的行业经验。我专注于创建高效、可扩展且用户友好的应用程序。我热爱解决复杂问题并构建创新解决方案。</p>
+                <p>我的专长包括前端开发（React、Vue、Angular）、后端开发（Node.js、Python、Java）以及云服务（AWS、Azure）。我注重代码质量、性能优化和用户体验。</p>
+                <p>在业余时间，我喜欢参与开源项目、撰写技术博客以及参加技术社区活动，不断学习新技术和最佳实践。我相信持续学习和团队协作是成功的关键。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section class="resume-education">
+        <div class="container">
+            <div class="section-header">
+                <h2>教育背景</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item scroll-animation">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2014 - 2018</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>计算机科学与技术 学士学位</h3>
+                        <h4>北京大学</h4>
+                        <p>主修课程：数据结构、算法分析、操作系统、计算机网络、数据库系统、软件工程等。</p>
+                        <p>GPA: 3.8/4.0，获得校级优秀毕业生称号。</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-animation">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2018 - 2020</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>软件工程 硕士学位</h3>
+                        <h4>清华大学</h4>
+                        <p>研究方向：人工智能与大数据分析、分布式系统、云计算架构。</p>
+                        <p>毕业论文：《基于深度学习的分布式系统性能优化研究》，获得优秀论文奖。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经验 -->
+    <section class="resume-experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>工作经验</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item scroll-animation">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2020 - 至今</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>高级全栈开发工程师</h3>
+                        <h4>科技创新有限公司</h4>
+                        <ul class="experience-list">
+                            <li>负责公司核心产品的前端和后端开发，使用React、Node.js和MongoDB技术栈</li>
+                            <li>设计并实现了微服务架构，提高了系统的可扩展性和可维护性</li>
+                            <li>优化了应用性能，将页面加载时间减少了40%，提升了用户体验</li>
+                            <li>带领5人开发团队，实施敏捷开发方法，提高了团队效率和代码质量</li>
+                            <li>与产品和设计团队紧密合作，将用户需求转化为功能实现</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-animation">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2018 - 2020</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>前端开发工程师</h3>
+                        <h4>互联网科技有限公司</h4>
+                        <ul class="experience-list">
+                            <li>使用Vue.js和Element UI开发企业级管理系统，实现了复杂的数据可视化功能</li>
+                            <li>参与RESTful API设计，与后端团队协作开发完整的功能模块</li>
+                            <li>实现了响应式设计，确保应用在各种设备上的良好体验</li>
+                            <li>编写单元测试和集成测试，保证代码质量和稳定性</li>
+                            <li>参与代码审查，提供技术指导，帮助团队成员提高技能</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业技能 -->
+    <section class="resume-skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>专业技能</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category scroll-animation">
+                    <h3><i class="fas fa-code"></i> 编程语言</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>HTML5</span>
+                        <span>CSS3/SASS</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category scroll-animation">
+                    <h3><i class="fas fa-laptop-code"></i> 前端技术</h3>
+                    <div class="skill-tags">
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>Angular</span>
+                        <span>Redux</span>
+                        <span>Webpack</span>
+                        <span>Jest</span>
+                        <span>Bootstrap</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category scroll-animation">
+                    <h3><i class="fas fa-server"></i> 后端技术</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>Django</span>
+                        <span>Spring Boot</span>
+                        <span>RESTful API</span>
+                        <span>GraphQL</span>
+                        <span>WebSockets</span>
+                    </div>
+                </div>
+                <div class="skill-category scroll-animation">
+                    <h3><i class="fas fa-database"></i> 数据库</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                        <span>Elasticsearch</span>
+                    </div>
+                </div>
+                <div class="skill-category scroll-animation">
+                    <h3><i class="fas fa-cloud"></i> DevOps & 云服务</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>CI/CD</span>
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>Google Cloud</span>
+                    </div>
+                </div>
+                <div class="skill-category scroll-animation">
+                    <h3><i class="fas fa-tools"></i> 工具 & 方法论</h3>
+                    <div class="skill-tags">
+                        <span>敏捷开发</span>
+                        <span>Scrum</span>
+                        <span>JIRA</span>
+                        <span>Figma</span>
+                        <span>VS Code</span>
+                        <span>Postman</span>
+                        <span>单元测试</span>
+                        <span>TDD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 证书与奖项 -->
+    <section class="resume-certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2>证书与奖项</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card scroll-animation">
+                    <div class="certificate-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>AWS 认证解决方案架构师</h3>
+                        <p>Amazon Web Services, 2022</p>
+                    </div>
+                </div>
+                <div class="certificate-card scroll-animation">
+                    <div class="certificate-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Google 认证专业云开发工程师</h3>
+                        <p>Google Cloud, 2021</p>
+                    </div>
+                </div>
+                <div class="certificate-card scroll-animation">
+                    <div class="certificate-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>全国软件开发大赛一等奖</h3>
+                        <p>中国软件行业协会, 2019</p>
+                    </div>
+                </div>
+                <div class="certificate-card scroll-animation">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>微软认证解决方案开发专家</h3>
+                        <p>Microsoft, 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo-text">个人简介</a>
+                    <p>创建优雅、高效且用户友好的应用程序</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="resume.html">简历</a></li>
+                        <li><a href="projects.html">项目</a></li>
+                        <li><a href="skills.html">技术栈</a></li>
+                        <li><a href="contact.html">联系我</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>社交媒体</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 脚本 -->
+    <script src="js/main.js"></script>
+</body>
+</html>

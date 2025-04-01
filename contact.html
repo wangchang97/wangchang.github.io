@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程序员个人网站 | 联系我</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">个人简介</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="resume.html">简历</a></li>
+                <li><a href="projects.html">项目</a></li>
+                <li><a href="skills.html">技术栈</a></li>
+                <li><a href="contact.html" class="active">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="animate-text">联系我</h1>
+            <div class="breadcrumb">
+                <a href="index.html">首页</a> / <span>联系我</span>
+            </div>
+        </div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系方式</h2>
+                <div class="section-divider"></div>
+                <p>如果您有任何问题或项目合作意向，欢迎通过以下方式联系我</p>
+            </div>
+
+            <div class="contact-info-grid">
+                <div class="contact-info-card scroll-animation">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>电子邮件</h3>
+                    <p>contact@example.com</p>
+                    <a href="mailto:contact@example.com" class="contact-link">发送邮件</a>
+                </div>
+
+                <div class="contact-info-card scroll-animation">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>电话</h3>
+                    <p>+86 123 4567 8910</p>
+                    <a href="tel:+8612345678910" class="contact-link">拨打电话</a>
+                </div>
+
+                <div class="contact-info-card scroll-animation">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>地址</h3>
+                    <p>北京市朝阳区科技园区</p>
+                    <a href="https://maps.google.com" target="_blank" class="contact-link">查看地图</a>
+                </div>
+
+                <div class="contact-info-card scroll-animation">
+                    <div class="contact-info-icon">
+                        <i class="fab fa-weixin"></i>
+                    </div>
+                    <h3>微信</h3>
+                    <p>扫描二维码添加</p>
+                    <a href="#" class="contact-link">显示二维码</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="contact-form-content">
+                    <div class="section-header text-left">
+                        <h2>发送消息</h2>
+                        <div class="section-divider"></div>
+                        <p>如果您有任何问题或项目需求，请填写下面的表单，我会尽快回复您</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form scroll-animation">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">您的姓名</label>
+                                <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">您的邮箱</label>
+                                <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <input type="text" id="subject" name="subject" placeholder="请输入消息主题" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">您的消息</label>
+                            <textarea id="message" name="message" rows="6" placeholder="请输入您的消息内容" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+
+                <div class="contact-image scroll-animation">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <h3>让我们一起合作</h3>
+                            <p>我随时准备好接受新的挑战和机会</p>
+                        </div>
+                        <div class="contact-card-body">
+                            <div class="contact-availability">
+                                <h4>工作时间</h4>
+                                <ul>
+                                    <li><span>周一至周五:</span> 9:00 - 18:00</li>
+                                    <li><span>周末:</span> 根据约定</li>
+                                </ul>
+                            </div>
+                            <div class="contact-social">
+                                <h4>社交媒体</h4>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见问题</h2>
+                <div class="section-divider"></div>
+                <p>以下是一些客户经常问到的问题</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item scroll-animation">
+                    <div class="faq-question">
+                        <h3>您如何确定项目报价？</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>项目报价基于多个因素，包括项目复杂度、所需功能、开发时间和资源投入等。我会在充分了解您的需求后，提供详细的报价方案。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animation">
+                    <div class="faq-question">
+                        <h3>一个典型的项目开发周期是多久？</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>项目周期因规模和复杂度而异。小型项目通常需要2-4周，中型项目需要1-3个月，大型项目可能需要3-6个月或更长时间。我会在项目开始前提供详细的时间线。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animation">
+                    <div class="faq-question">
+                        <h3>您是否提供项目维护和支持服务？</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>是的，我提供项目完成后的维护和支持服务。根据项目需求，可以制定定期维护计划或按需提供技术支持。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animation">
+                    <div class="faq-question">
+                        <h3>您如何确保项目的质量和安全性？</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我遵循行业最佳实践和安全标准，包括代码审查、自动化测试、性能优化和安全漏洞检测。每个项目都经过严格的质量控制流程，确保交付高质量的产品。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地图 -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.71256294513336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd134e199a405a163!2sWall%20St%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1570696571917!5m2!1sen!2sbd" allowfullscreen=""></iframe>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo-text">个人简介</a>
+                    <p>创建优雅、高效且用户友好的应用程序</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="resume.html">简历</a></li>
+                        <li><a href="projects.html">项目</a></li>
+                        <li><a href="skills.html">技术栈</a></li>
+                        <li><a href="contact.html">联系我</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>社交媒体</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 脚本 -->
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ手风琴效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon i');
+                
+                question.addEventListener('click', () => {
+                    // 切换当前FAQ项的展开/折叠状态
+                    item.classList.toggle('active');
+                    
+                    // 切换图标
+                    if (item.classList.contains('active')) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
